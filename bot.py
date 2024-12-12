@@ -586,6 +586,8 @@ class Tomartod:
                         amount, amount_type = self.raffle()
                         self.log(f"{green}success claim {white}{amount} {amount_type}, {red} ticket {white} - {i+1} / {tickets}")
                         time.sleep(3)
+                    self.log(f"{green}balance : {white}{balance}")
+
 
             if self.complete_task:
                 tasks = self.get_tasks_list(token)
